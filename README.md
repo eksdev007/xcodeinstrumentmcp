@@ -1,4 +1,5 @@
-<img width="125" height="125" alt="xcodeinstrumentmcp" src="https://github.com/user-attachments/assets/a13c7343-50c3-4d0f-8645-bd3e5893f433" />
+<img width="125" height="125" alt="image" src="https://github.com/user-attachments/assets/c56fc28d-c447-4408-bdfa-8d18111c7af8" />
+
 
 # xcodeinstrumentmcp
 
