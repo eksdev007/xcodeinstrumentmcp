@@ -15,12 +15,6 @@ It ships one package with:
 
 ## Install
 
-Global install:
-
-```bash
-npm install -g xcodeinstrumentmcp
-```
-
 Repo-local install:
 
 ```bash
