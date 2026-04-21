@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+.tmp/
+.tmpdist/
+.cache/
+reports/*.json
+reports/*.md
+reports/*.txt
+reports/runtime-audits/
+fixtures/
+tools/xim-swiftsignpost/.build/
+tools/xim-swiftsignpost/.swiftpm/
+.DS_Store
+*.tsbuildinfo
+/docs

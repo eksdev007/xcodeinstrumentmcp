@@ -1,0 +1,74 @@
+{
+  "name": "xcodeinstrumentmcp",
+  "version": "1.0.0",
+  "description": "Analysis-first CLI and MCP workflows for Xcode Instruments traces.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eksdev007/xcodeinstrumentmcp.git"
+  },
+  "homepage": "https://github.com/eksdev007/xcodeinstrumentmcp#readme",
+  "bugs": {
+    "url": "https://github.com/eksdev007/xcodeinstrumentmcp/issues"
+  },
+  "keywords": [
+    "xcode",
+    "instruments",
+    "profiling",
+    "performance",
+    "mcp",
+    "agent",
+    "typescript",
+    "swift"
+  ],
+  "type": "module",
+  "bin": {
+    "xcodeinstrumentmcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "tools/xim-swiftsignpost/Package.swift",
+    "tools/xim-swiftsignpost/Package.resolved",
+    "tools/xim-swiftsignpost/README.md",
+    "tools/xim-swiftsignpost/Sources"
+  ],
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@10.0.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "build": "tsup",
+    "bootstrap": "bash scripts/bootstrap.sh",
+    "format": "bash scripts/format.sh",
+    "lint": "bash scripts/lint.sh",
+    "test": "bash scripts/test.sh",
+    "verify": "bash scripts/verify.sh",
+    "checklist": "bash scripts/checklist_status.sh",
+    "release:readiness": "bash scripts/release_readiness.sh"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "@modelcontextprotocol/sdk": "^1.18.1",
+    "commander": "^14.0.1",
+    "execa": "^9.6.0",
+    "fast-xml-parser": "^5.3.0",
+    "saxes": "^6.0.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "@types/better-sqlite3": "^7.6.13",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
